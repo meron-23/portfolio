@@ -1,0 +1,90 @@
+MERON MULUYE AMARE
+Machine Learning Engineer & Data Scientist
+
+CONTACT
+Email: meron@example.com
+GitHub: https://github.com/meron-23
+LinkedIn: [Your LinkedIn Profile]
+
+PROFESSIONAL SUMMARY
+Machine Learning Engineer and Data Scientist with expertise in developing sophisticated AI systems, including self-reflective RAG architectures, fraud detection models, and explainable AI applications. Proficient in the full ML lifecycle from data preprocessing to deployment, with strong focus on model interpretability and business impact.
+
+EXPERIENCE
+
+ML Engineering Intern | 10 Academy | 2025-2026
+- Completed intensive Kifiya AI Mastery (KAIM) Training Program, a three-month remote training focused on creating job-ready AI Engineers for Ethiopian FinTech sector
+- Engaged in comprehensive curriculum covering Generative AI Engineering, Machine Learning Engineering, and Data Engineering
+- Developed practical ML skills through intensive project-based learning with emphasis on real-world applications
+
+Software Developer Intern | Gravity Technologies | 2025-2026
+- Contributed to software development projects focusing on innovative technology solutions for business clients
+- Worked on cutting-edge UI/UX design and digital expertise to ensure seamless client connections
+- Collaborated on digital transformation projects for various clients
+
+AI Engineering Intern | iCog Labs | 2025-2026
+- Worked with East Africa's first private AI and Robotics Research and Development Company
+- Focused on Artificial Intelligence R&D projects with international clients from USA, Canada, Japan, Hong Kong, and Germany
+- Gained exposure to Artificial General Intelligence, Robotics, AI-enhanced Commercial Software, Bioinformatics Research, and Machine Learning-based data analysis
+- Collaborated with international partners including US AI firm Novamente LLC and SingularityNet
+
+EDUCATION
+
+Bachelor of Science in Computer Science | St. Mary's University, Addis Ababa | 2022-2026
+- Completed comprehensive Computer Science curriculum with focus on software development, algorithms, and data structures
+- Graduated from accredited private university with emphasis on practical skills and industry relevance
+
+DeepLearning.AI Machine Learning Specialization | Coursera | 2025
+- Supervised Machine Learning: Regression and Classification
+- Unsupervised Learning, Recommenders, Reinforcement Learning
+- Skills: Linear/Logistic Regression, Scikit-learn, NumPy, Predictive Modeling, Model Evaluation
+
+Data Science Professional Program | ALX Africa | 2024-2025
+- Comprehensive program covering data analysis, machine learning, and software engineering fundamentals
+
+Software Engineering Professional Program | ALX Africa | 2023-2025
+- Intensive program focused on software development, algorithms, and system design
+
+freeCodeCamp Certifications | 2025-2026
+- Machine Learning with Python
+- Data Analysis with Python  
+- Data Visualization
+
+TECHNICAL SKILLS
+
+Machine Learning & AI
+- Supervised/Unsupervised Learning, Deep Learning, Neural Networks, Recommender Systems, Anomaly Detection
+- LLM & RAG: LangChain, RAG architectures, Prompt Engineering, Vector Databases
+- Explainable AI: SHAP, Feature Importance, Model Interpretability
+
+Programming & Libraries
+- Languages: Python (Advanced), SQL
+- ML Libraries: scikit-learn, XGBoost, PyTorch, TensorFlow, pandas, NumPy, Matplotlib, Seaborn
+- NLP/LLM: LangChain, Hugging Face, Transformers
+
+Tools & Platforms
+- Frameworks: Streamlit, FastAPI, Flask
+- Databases: ChromaDB, FAISS, PostgreSQL
+- MLOps: MLflow, Docker, Git
+- Cloud: AWS (basics)
+
+PROJECTS
+
+Self-RAG: Self-Reflective Retrieval-Augmented Generation
+- Sophisticated RAG system with built-in self-critique capabilities
+- Three specialized critics: Retrieval, Support, Completeness for real-time answer evaluation
+- Technologies: Python, Streamlit, ChromaDB, Gemini API, Mistral-7B, LangChain
+
+CrediTrust Financial - Complaint Intelligence AI
+- AI-powered complaint analysis system for fintech serving 500,000+ customers
+- Semantic search across 4 East African markets with actionable business insights
+- Technologies: FAISS, sentence-transformers, Flan-T5, Streamlit, LangChain, PyTorch
+
+SHAP Analysis of Supreme Court Decisions
+- Applied Explainable AI (SHAP) to analyze U.S. Supreme Court case outcomes
+- Created global and local explanations with SHAP visualizations
+- Technologies: Python, SHAP, XGBoost, scikit-learn, Matplotlib
+
+Fraud Detection System - Adey Innovations Inc.
+- End-to-end fraud detection system for e-commerce and credit card transactions
+- Achieved 0.96 AUC-ROC with XGBoost and SHAP-based explanations
+- Technologies: Python, XGBoost, SMOTE, SHAP, pandas, scikit-learn

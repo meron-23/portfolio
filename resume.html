@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Meron Muluye Amare | Machine Learning Engineer & Data Scientist</title>
+    <meta name="description" content="Professional resume of Meron Muluye Amare, Machine Learning Engineer & Data Scientist. Download PDF or view online.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Resume-specific styles */
+        .resume-hero {
+            padding: calc(var(--space-24) + var(--space-8)) 0 var(--space-12);
+            text-align: center;
+            background-color: var(--surface);
+        }
+        
+        .resume-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--space-12) var(--space-8);
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: var(--border-radius);
+        }
+        
+        .resume-header {
+            text-align: center;
+            margin-bottom: var(--space-12);
+            padding-bottom: var(--space-8);
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .resume-name {
+            font-family: var(--font-heading);
+            font-size: var(--scale-6);
+            font-weight: 600;
+            margin-bottom: var(--space-2);
+            color: var(--text-primary);
+        }
+        
+        .resume-title {
+            font-size: var(--scale-4);
+            color: var(--text-secondary);
+            margin-bottom: var(--space-4);
+            font-weight: 400;
+        }
+        
+        .resume-contact {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-6);
+            flex-wrap: wrap;
+            margin-bottom: var(--space-4);
+        }
+        
+        .resume-section {
+            margin-bottom: var(--space-12);
+        }
+        
+        .resume-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .resume-section-title {
+            font-family: var(--font-heading);
+            font-size: var(--scale-5);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: var(--space-2);
+        }
+        
+        .resume-item {
+            margin-bottom: var(--space-6);
+            padding-left: var(--space-4);
+            border-left: 2px solid var(--border);
+            position: relative;
+        }
+        
+        .resume-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+        }
+        
+        .resume-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .resume-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-2);
+            flex-wrap: wrap;
+            gap: var(--space-2);
+        }
+        
+        .resume-item-title {
+            font-size: var(--scale-3);
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .resume-item-organization {
+            font-size: var(--scale-2);
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .resume-item-date {
+            font-size: var(--scale-2);
+            color: var(--text-secondary);
+            white-space: nowrap;
+        }
+        
+        .resume-item-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--space-3);
+        }
+        
+        .resume-item-achievements {
+            list-style: none;
+        }
+        
+        .resume-item-achievements li {
+            color: var(--text-secondary);
+            font-size: var(--scale-2);
+            margin-bottom: var(--space-2);
+            padding-left: var(--space-4);
+            position: relative;
+        }
+        
+        .resume-item-achievements li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        
+        .resume-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+        }
+        
+        .resume-skill-category {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--border-radius);
+            padding: var(--space-4);
+        }
+        
+        .resume-skill-title {
+            font-family: var(--font-heading);
+            font-size: var(--scale-3);
+            font-weight: 600;
+            margin-bottom: var(--space-3);
+            color: var(--accent);
+        }
+        
+        .resume-skill-list {
+            list-style: none;
+        }
+        
+        .resume-skill-list li {
+            color: var(--text-secondary);
+            font-size: var(--scale-2);
+            margin-bottom: var(--space-2);
+            padding-left: var(--space-4);
+            position: relative;
+        }
+        
+        .resume-skill-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+        
+        .resume-actions {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-6);
+            margin-bottom: var(--space-8);
+            flex-wrap: wrap;
+        }
+        
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-3) var(--space-6);
+            background: var(--background);
+            border: 1px solid var(--accent);
+            border-radius: var(--border-radius);
+            color: var(--accent);
+            font-weight: 500;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .resume-btn:hover {
+            background: var(--accent);
+            color: var(--background);
+        }
+        
+        .resume-btn--secondary {
+            border-color: var(--border);
+            color: var(--text-secondary);
+        }
+        
+        .resume-btn--secondary:hover {
+            background: var(--text-secondary);
+            color: var(--background);
+            border-color: var(--text-secondary);
+        }
+        
+        .resume-item-link {
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition);
+  position: relative;
+}
+
+.resume-item-link:hover {
+  color: var(--text-primary);
+  text-decoration: underline;
+}
+
+.resume-item-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-primary);
+  transition: width 0.3s ease;
+}
+
+.resume-item-link:hover::after {
+  width: 100%;
+}
+
+/* Certificate Modal */
+.certificate-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+.certificate-modal-content {
+  position: relative;
+  background-color: var(--background);
+  margin: 10% auto;
+  padding: 0;
+  width: 90%;
+  max-width: 600px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease;
+}
+
+.certificate-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border);
+}
+
+.certificate-modal-title {
+  font-family: var(--font-heading);
+  font-size: var(--scale-4);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.certificate-modal-close {
+  background: none;
+  border: none;
+  font-size: var(--scale-5);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: var(--space-2);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.certificate-modal-close:hover {
+  background-color: var(--accent-light);
+  color: var(--accent);
+}
+
+.certificate-modal-body {
+  padding: var(--space-6);
+}
+
+.certificate-info {
+  text-align: center;
+}
+
+.certificate-name {
+  font-family: var(--font-heading);
+  font-size: var(--scale-4);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-4);
+}
+
+.certificate-description {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+  line-height: 1.6;
+}
+
+.certificate-actions {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.certificate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--border-radius);
+  color: var(--background);
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.certificate-btn:hover {
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+.certificate-btn--secondary {
+  background: var(--background);
+  border-color: var(--border);
+  color: var(--text-secondary);
+}
+
+.certificate-btn--secondary:hover {
+  background: var(--text-secondary);
+  color: var(--background);
+  border-color: var(--text-secondary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media print {
+            .resume-hero {
+                padding: var(--space-8) 0 var(--space-6);
+                background: none;
+            }
+            
+            .resume-content {
+                padding: var(--space-6);
+                border: none;
+                box-shadow: none;
+            }
+            
+            .resume-actions {
+                display: none;
+            }
+            
+            .nav {
+                display: none;
+            }
+            
+            .footer {
+                display: none;
+            }
+            
+            .resume-section {
+                page-break-inside: avoid;
+                margin-bottom: var(--space-8);
+            }
+            
+            .resume-item {
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .resume-content {
+                padding: var(--space-6);
+            }
+            
+            .resume-name {
+                font-size: var(--scale-5);
+            }
+            
+            .resume-title {
+                font-size: var(--scale-3);
+            }
+            
+            .resume-contact {
+                gap: var(--space-4);
+            }
+            
+            .resume-item-header {
+                flex-direction: column;
+            }
+            
+            .resume-skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <h1 class="nav-name">MA</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link nav-link--resume" onclick="window.print(); return false;">Print</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resume-hero">
+            <div class="container">
+                <div class="resume-actions">
+                    <a href="docs/Meron_Resume.txt" class="resume-btn" download>
+                        <span>Download Resume (Text)</span>
+                    </a>
+                    <button class="resume-btn resume-btn--secondary" onclick="window.print()">
+                        <span>Print Resume</span>
+                    </button>
+                    <a href="index.html" class="resume-btn resume-btn--secondary">
+                        <span>Back to Portfolio</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <div class="container">
+                <div class="resume-content">
+                    <div class="resume-header">
+                        <h1 class="resume-name">Meron Muluye Amare</h1>
+                        <p class="resume-title">Machine Learning Engineer & Data Scientist</p>
+                        <div class="resume-contact">
+                            <a href="https://github.com/meron-23" class="contact-link" target="_blank" rel="noopener">GitHub</a>
+                            <a href="#" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+                            <a href="mailto:meron@example.com" class="contact-link">Email</a>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">Professional Summary</h2>
+                        <div class="resume-item">
+                            <p class="resume-item-description">
+                                Machine Learning Engineer and Data Scientist with expertise in developing sophisticated AI systems, 
+                                including self-reflective RAG architectures, fraud detection models, and explainable AI applications. 
+                                Proficient in the full ML lifecycle from data preprocessing to deployment, with strong focus on 
+                                model interpretability and business impact. Experienced in building production-ready systems using 
+                                Python, PyTorch, scikit-learn, and modern ML frameworks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">Featured Projects</h2>
+                        
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">Self-RAG: Self-Reflective Retrieval-Augmented Generation</h3>
+                                    <p class="resume-item-organization">Independent Project</p>
+                                </div>
+                                <p class="resume-item-date">2025</p>
+                            </div>
+                            <p class="resume-item-description">
+                                Developed a sophisticated RAG system with built-in self-critique capabilities featuring three 
+                                specialized critics (Retrieval, Support, Completeness) for real-time answer evaluation.
+                            </p>
+                            <ul class="resume-item-achievements">
+                                <li>Built modular architecture with pluggable critics and retrievers</li>
+                                <li>Implemented real-time reasoning trace visibility</li>
+                                <li>Created beautiful Streamlit interface with system monitoring</li>
+                                <li>Developed intelligent chunking with semantic overlap</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">CrediTrust Financial - Complaint Intelligence AI</h3>
+                                    <p class="resume-item-organization">Fintech AI Solution</p>
+                                </div>
+                                <p class="resume-item-date">2025</p>
+                            </div>
+                            <p class="resume-item-description">
+                                AI-powered complaint analysis system for fintech serving 500,000+ customers across Kenya, Uganda, 
+                                Tanzania, and Rwanda, transforming unstructured feedback into strategic insights.
+                            </p>
+                            <ul class="resume-item-achievements">
+                                <li>Built semantic search across 4 East African markets</li>
+                                <li>Created PM-friendly interface with one-click business queries</li>
+                                <li>Implemented multi-product analysis (Credit Cards, BNPL, Loans)</li>
+                                <li>Delivered actionable recommendations with source transparency</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">SHAP Analysis of Supreme Court Decisions</h3>
+                                    <p class="resume-item-organization">Explainable AI Research</p>
+                                </div>
+                                <p class="resume-item-date">2025</p>
+                            </div>
+                            <p class="resume-item-description">
+                                Applied Explainable AI (SHAP) to analyze and interpret predictions of U.S. Supreme Court case 
+                                outcomes using historical decision data.
+                            </p>
+                            <ul class="resume-item-achievements">
+                                <li>Identified top predictive features in judicial decisions</li>
+                                <li>Created global and local explanations with SHAP visualizations</li>
+                                <li>Demonstrated model interpretability on sensitive legal data</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">Fraud Detection System - Adey Innovations Inc.</h3>
+                                    <p class="resume-item-organization">E-commerce Security</p>
+                                </div>
+                                <p class="resume-item-date">2025</p>
+                            </div>
+                            <p class="resume-item-description">
+                                End-to-end fraud detection system for e-commerce and credit card transactions with emphasis on 
+                                interpretability and business impact.
+                            </p>
+                            <ul class="resume-item-achievements">
+                                <li>Achieved 0.96 AUC-ROC with XGBoost</li>
+                                <li>Handled severe class imbalance using SMOTE</li>
+                                <li>Built SHAP-based explanations for compliance</li>
+                                <li>Created feature engineering pipeline for transaction patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">Professional Experience</h2>
+                        
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">ML Engineering Intern</h3>
+                                    <p class="resume-item-organization">10 Academy</p>
+                                </div>
+                                <p class="resume-item-date">2025 - 2026</p>
+                            </div>
+                            <p class="resume-item-description">
+                                Completed intensive Kifiya AI Mastery (KAIM) Training Program, a three-month remote training focused on creating job-ready AI Engineers for the Ethiopian FinTech sector. Engaged in comprehensive curriculum covering Generative AI Engineering, Machine Learning Engineering, and Data Engineering with emphasis on project-based learning and real-world applications.
+                            </p>
+                            <ul class="resume-item-achievements">
+                                <li>Developed practical ML skills through intensive project-based learning</li>
+                                <li>Gained expertise in Generative AI and ML Engineering for FinTech applications</li>
+                                <li>Collaborated on industry-relevant projects with direct business impact</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">Software Developer Intern</h3>
+                                    <p class="resume-item-organization">Gravity Technologies</p>
+                                </div>
+                                <p class="resume-item-date">2025 - 2026</p>
+                            </div>
+                            <p class="resume-item-description">
+                                Contributed to software development projects focusing on innovative technology solutions for business clients. Worked on cutting-edge UI/UX design and digital expertise to ensure seamless client connections and digital transformation initiatives.
+                            </p>
+                            <ul class="resume-item-achievements">
+                                <li>Developed web applications using modern software development practices</li>
+                                <li>Collaborated on UI/UX design and implementation</li>
+                                <li>Contributed to digital transformation projects for various clients</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">AI Engineering Intern</h3>
+                                    <p class="resume-item-organization">iCog Labs</p>
+                                </div>
+                                <p class="resume-item-date">2025 - 2026</p>
+                            </div>
+                            <p class="resume-item-description">
+                                Worked with East Africa's first private AI and Robotics Research and Development Company. Focused on Artificial Intelligence R&D projects with international clients from USA, Canada, Japan, Hong Kong, and Germany. Gained exposure to Artificial General Intelligence, Robotics, AI-enhanced Commercial Software, Bioinformatics Research, and Machine Learning-based data analysis.
+                            </p>
+                            <ul class="resume-item-achievements">
+                                <li>Contributed to AI research and development projects</li>
+                                <li>Worked on machine learning-based data analysis initiatives</li>
+                                <li>Collaborated with international partners including US AI firm Novamente LLC and SingularityNet</li>
+                                <li>Participated in prototype development for hardware products</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">Education & Certifications</h2>
+                        
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">Bachelor of Science in Computer Science</h3>
+                                    <p class="resume-item-organization">St. Mary's University, Addis Ababa</p>
+                                </div>
+                                <p class="resume-item-date">2022 - 2026</p>
+                            </div>
+                            <p class="resume-item-description">
+                                Completed Bachelor of Science degree in Computer Science at St. Mary's University, a private higher education institution located in Addis Ababa, Ethiopia. The university is accredited for Computer Science programs and offers comprehensive undergraduate and graduate programs with a focus on practical skills and industry relevance.
+                            </p>
+                            <ul class="resume-item-achievements">
+                                <li>Graduated with comprehensive Computer Science curriculum</li>
+                                <li>Gained foundation in software development, algorithms, and data structures</li>
+                                <li>Participated in university's testing center for standardized tests and job placement</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title"><a href="https://www.coursera.org/account/accomplishments/specialization/certificate" target="_blank" rel="noopener" class="resume-item-link">DeepLearning.AI - Machine Learning Specialization</a></h3>
+                                    <p class="resume-item-organization">Coursera</p>
+                                </div>
+                                <p class="resume-item-date">2025</p>
+                            </div>
+                            <ul class="resume-item-achievements">
+                                <li><a href="#" onclick="showCertificate('supervised-learning')" class="resume-item-link">Supervised Machine Learning: Regression and Classification</a></li>
+                                <li><a href="#" onclick="showCertificate('unsupervised-learning')" class="resume-item-link">Unsupervised Learning, Recommenders, Reinforcement Learning</a></li>
+                                <li>Advanced topics in Deep Learning and Neural Networks</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">Data Science Professional Program</h3>
+                                    <p class="resume-item-organization">ALX Africa</p>
+                                </div>
+                                <p class="resume-item-date">2024-2025</p>
+                            </div>
+                            <p class="resume-item-description">
+                                Comprehensive program covering data analysis, machine learning, and software engineering fundamentals.
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">Software Engineering Professional Program</h3>
+                                    <p class="resume-item-organization">ALX Africa</p>
+                                </div>
+                                <p class="resume-item-date">2024-2025</p>
+                            </div>
+                            <p class="resume-item-description">
+                                Intensive program focused on software development, algorithms, and system design.
+                            </p>
+                        </div>
+
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <div>
+                                    <h3 class="resume-item-title">freeCodeCamp Certifications</h3>
+                                    <p class="resume-item-organization">freeCodeCamp</p>
+                                </div>
+                                <p class="resume-item-date">2024-2025</p>
+                            </div>
+                            <ul class="resume-item-achievements">
+                                <li><a href="#" onclick="showCertificate('machine-learning-python')" class="resume-item-link">Machine Learning with Python</a></li>
+                                <li><a href="#" onclick="showCertificate('data-analysis-python')" class="resume-item-link">Data Analysis with Python</a></li>
+                                <li><a href="#" onclick="showCertificate('data-visualization')" class="resume-item-link">Data Visualization</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">Technical Skills</h2>
+                        <div class="resume-skills-grid">
+                            <div class="resume-skill-category">
+                                <h3 class="resume-skill-title">Machine Learning & AI</h3>
+                                <ul class="resume-skill-list">
+                                    <li>Supervised/Unsupervised Learning</li>
+                                    <li>Deep Learning & Neural Networks</li>
+                                    <li>Reinforcement Learning</li>
+                                    <li>LLM & RAG Architectures</li>
+                                    <li>Explainable AI (SHAP)</li>
+                                    <li>Prompt Engineering</li>
+                                </ul>
+                            </div>
+
+                            <div class="resume-skill-category">
+                                <h3 class="resume-skill-title">Programming & Libraries</h3>
+                                <ul class="resume-skill-list">
+                                    <li>Python (Advanced)</li>
+                                    <li>SQL</li>
+                                    <li>scikit-learn, XGBoost</li>
+                                    <li>PyTorch, TensorFlow</li>
+                                    <li>pandas, NumPy</li>
+                                    <li>Matplotlib, Seaborn</li>
+                                </ul>
+                            </div>
+
+                            <div class="resume-skill-category">
+                                <h3 class="resume-skill-title">Tools & Technologies</h3>
+                                <ul class="resume-skill-list">
+                                    <li>LangChain, Hugging Face</li>
+                                    <li>Streamlit, FastAPI, Flask</li>
+                                    <li>ChromaDB, FAISS</li>
+                                    <li>PostgreSQL</li>
+                                    <li>MLflow, Docker, Git</li>
+                                    <li>AWS (basics)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">Professional Interests</h2>
+                        <div class="resume-item">
+                            <p class="resume-item-description">
+                                Passionate about building interpretable and ethical AI systems that solve real-world problems. 
+                                Particularly interested in explainable AI, responsible ML deployment, and creating AI tools that 
+                                enhance human decision-making. Committed to continuous learning and staying current with 
+                                emerging technologies in machine learning and artificial intelligence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Meron Muluye Amare</p>
+                <a href="index.html" class="footer-link">Portfolio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="certificate-modal">
+        <div class="certificate-modal-content">
+            <div class="certificate-modal-header">
+                <h3 class="certificate-modal-title">Certificate Verification</h3>
+                <button class="certificate-modal-close" onclick="closeCertificate()">&times;</button>
+            </div>
+            <div class="certificate-modal-body">
+                <div class="certificate-info">
+                    <h4 class="certificate-name" id="certificate-name"></h4>
+                    <p class="certificate-description" id="certificate-description"></p>
+                    <div class="certificate-actions">
+                        <a href="#" id="certificate-link" target="_blank" rel="noopener" class="certificate-btn">View Original Certificate</a>
+                        <button class="certificate-btn certificate-btn--secondary" onclick="closeCertificate()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

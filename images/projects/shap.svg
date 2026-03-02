@@ -1,0 +1,97 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- Main Interface Container -->
+  <rect x="50" y="50" width="700" height="500" rx="8" fill="white" filter="url(#shadow)"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="80" rx="8" fill="#2c3e50"/>
+  <text x="400" y="95" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="white" text-anchor="middle">SHAP Supreme Court Analysis</text>
+  
+  <!-- Case Information -->
+  <g transform="translate(80, 160)">
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2c3e50">Case: Brown v. Board of Education (1954)</text>
+    <text x="0" y="20" font-family="Inter, sans-serif" font-size="12" fill="#6c757d">Prediction: Favor Plaintiff (Confidence: 0.847)</text>
+  </g>
+  
+  <!-- SHAP Waterfall Plot -->
+  <g transform="translate(80, 200)">
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2c3e50">SHAP Feature Importance:</text>
+    
+    <!-- Base value -->
+    <rect x="0" y="20" width="640" height="40" rx="4" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="10" y="35" font-family="Inter, sans-serif" font-size="11" fill="#6c757d">Base Value: 0.324</text>
+    <text x="10" y="50" font-family="Inter, sans-serif" font-size="11" fill="#6c757d">Average prediction across all cases</text>
+    
+    <!-- Feature 1 -->
+    <rect x="0" y="70" width="480" height="35" rx="4" fill="#e8f5e8" stroke="#4caf50" stroke-width="1"/>
+    <text x="10" y="85" font-family="Inter, sans-serif" font-size="11" fill="#2e7d32">+0.285</text>
+    <text x="60" y="85" font-family="Inter, sans-serif" font-size="11" fill="#388e3c">Precedent Alignment (Strong)</text>
+    <text x="60" y="98" font-family="Inter, sans-serif" font-size="10" fill="#66bb6a">Case aligns with previous civil rights decisions</text>
+    
+    <!-- Feature 2 -->
+    <rect x="0" y="115" width="320" height="35" rx="4" fill="#e8f5e8" stroke="#4caf50" stroke-width="1"/>
+    <text x="10" y="130" font-family="Inter, sans-serif" font-size="11" fill="#2e7d32">+0.189</text>
+    <text x="60" y="130" font-family="Inter, sans-serif" font-size="11" fill="#388e3c">Liberal Ideology Score</text>
+    <text x="60" y="143" font-family="Inter, sans-serif" font-size="10" fill="#66bb6a">Court liberal leaning: 0.742</text>
+    
+    <!-- Feature 3 -->
+    <rect x="0" y="160" width="240" height="35" rx="4" fill="#ffebee" stroke="#f44336" stroke-width="1"/>
+    <text x="10" y="175" font-family="Inter, sans-serif" font-size="11" fill="#c62828">-0.142</text>
+    <text x="60" y="175" font-family="Inter, sans-serif" font-size="11" fill="#d32f2f">Federal Government Position</text>
+    <text x="60" y="188" font-family="Inter, sans-serif" font-size="10" fill="#ef5350">Government opposes segregation</text>
+    
+    <!-- Feature 4 -->
+    <rect x="0" y="205" width="160" height="35" rx="4" fill="#e8f5e8" stroke="#4caf50" stroke-width="1"/>
+    <text x="10" y="220" font-family="Inter, sans-serif" font-size="11" fill="#2e7d32">+0.095</text>
+    <text x="60" y="220" font-family="Inter, sans-serif" font-size="11" fill="#388e3c">Economic Impact</text>
+    <text x="60" y="233" font-family="Inter, sans-serif" font-size="10" fill="#66bb6a">High economic significance</text>
+    
+    <!-- Feature 5 -->
+    <rect x="0" y="250" width="120" height="35" rx="4" fill="#ffebee" stroke="#f44336" stroke-width="1"/>
+    <text x="10" y="265" font-family="Inter, sans-serif" font-size="11" fill="#c62828">-0.078</text>
+    <text x="60" y="265" font-family="Inter, sans-serif" font-size="11" fill="#d32f2f">Regional Factors</text>
+    <text x="60" y="278" font-family="Inter, sans-serif" font-size="10" fill="#ef5350">Southern state location</text>
+  </g>
+  
+  <!-- Final Prediction -->
+  <g transform="translate(80, 490)">
+    <rect x="0" y="0" width="640" height="50" rx="4" fill="#e3f2fd" stroke="#2196f3" stroke-width="2"/>
+    <text x="10" y="20" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#1565c0">Final Prediction: 0.847</text>
+    <text x="10" y="35" font-family="Inter, sans-serif" font-size="11" fill="#1976d2">Model predicts favorable outcome for plaintiff (84.7% confidence)</text>
+  </g>
+  
+  <!-- Model Info -->
+  <g transform="translate(500, 160)">
+    <rect x="0" y="0" width="220" height="100" rx="4" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+    <text x="10" y="20" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2c3e50">Model Details:</text>
+    <text x="10" y="35" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c757d">Algorithm: XGBoost</text>
+    <text x="10" y="48" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c757d">Accuracy: 0.892</text>
+    <text x="10" y="61" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c757d">Dataset: 8,500 cases</text>
+    <text x="10" y="74" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c757d">Features: 47 variables</text>
+    <text x="10" y="87" font-family="JetBrains Mono, monospace" font-size="10" fill="#6c757d">SHAP Version: 0.42.1</text>
+  </g>
+  
+  <!-- Status Indicator -->
+  <circle cx="720" cy="90" r="8" fill="#4caf50"/>
+  <text x="680" y="95" font-family="Inter, sans-serif" font-size="10" fill="#4caf50">Analyzed</text>
+</svg>
