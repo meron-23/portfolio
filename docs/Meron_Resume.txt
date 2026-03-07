@@ -1,10 +1,10 @@
-MERON MULUYE AMARE
+MERON MULUYE
 Machine Learning Engineer & Data Scientist
 
 CONTACT
-Email: meron@example.com
+Email: meronmuluye75@gmail.com
 GitHub: https://github.com/meron-23
-LinkedIn: [Your LinkedIn Profile]
+LinkedIn: LinkedIn/in/meron-muluye
 
 PROFESSIONAL SUMMARY
 Machine Learning Engineer and Data Scientist with expertise in developing sophisticated AI systems, including self-reflective RAG architectures, fraud detection models, and explainable AI applications. Proficient in the full ML lifecycle from data preprocessing to deployment, with strong focus on model interpretability and business impact.
@@ -12,7 +12,7 @@ Machine Learning Engineer and Data Scientist with expertise in developing sophis
 EXPERIENCE
 
 ML Engineering Intern | 10 Academy | 2025-2026
-- Completed intensive Kifiya AI Mastery (KAIM) Training Program, a three-month remote training focused on creating job-ready AI Engineers for Ethiopian FinTech sector
+- Completed intensive Kifiya AI Mastery (KAIM) Traininsg Program, a three-month remote training focused on creating job-ready AI Engineers for Ethiopian FinTech sector
 - Engaged in comprehensive curriculum covering Generative AI Engineering, Machine Learning Engineering, and Data Engineering
 - Developed practical ML skills through intensive project-based learning with emphasis on real-world applications
 

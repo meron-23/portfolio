@@ -1,357 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meron Muluye Amare - Machine Learning Engineer & Data Scientist</title>
-    <meta name="description" content="Portfolio of Meron Muluye Amare, Machine Learning Engineer & Data Scientist specializing in ML, AI, and data science projects.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
+    <title>Meron Muluye | Machine Learning Engineer</title>
+    <meta name="description"
+        content="Official portfolio of Meron Muluye. Specialized in RAG architectures, Fraud Detection, and Explainable AI.">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-brand">
-                    <h1 class="nav-name">MA</h1>
-                </div>
-                <div class="nav-links">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#education" class="nav-link">Education</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="resume.html" class="nav-link nav-link--resume">Resume</a>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">MERON M.</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#projects">Expertise</a></li>
+                <li><a href="#skills">Capabilities</a></li>
+                <li><a href="#timeline">Background</a></li>
+                <li><a href="resume.html">Curriculum Vitae</a></li>
+                <li><button class="theme-toggle" id="theme-btn">M</button></li>
+            </ul>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="subtitle">Machine Learning Engineer & Data Scientist</span>
+                <h1>Designing Intelligent Systems for Complex Realities.</h1>
+                <p>Specializing in the intersection of Retrieval-Augmented Generation, Model Interpretability, and
+                    Scalable AI Infrastructure. Currently based in Addis Ababa, Ethiopia.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Portfolio</a>
+                    <a href="resume.html" class="btn btn-outline">Review CV</a>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-name">Meron Muluye Amare</h1>
-                    <p class="hero-title">Machine Learning Engineer & Data Scientist</p>
-                    <div class="hero-contact">
-                        <a href="https://github.com/meron-23" class="contact-link" target="_blank" rel="noopener">GitHub</a>
-                        <a href="https://www.linkedin.com/in/meronmuluye/" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
-                        <a href="mailto:meronmuluye75@gmail.com" class="contact-link">Email</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="images/projects/self-rag.svg" alt="Self-RAG Interface" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Self-RAG: Self-Reflective Retrieval-Augmented Generation</h3>
-                            <p class="project-description">A sophisticated RAG system with built-in self-critique capabilities. Features three specialized critics (Retrieval, Support, Completeness) that evaluate answers in real-time with full reasoning transparency.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Streamlit</span>
-                                <span class="tech-tag">ChromaDB</span>
-                                <span class="tech-tag">Gemini API</span>
-                                <span class="tech-tag">LangChain</span>
-                            </div>
-                            <div class="project-achievements">
-                                <ul class="achievement-list">
-                                    <li>Built modular architecture with pluggable critics and retrievers</li>
-                                    <li>Implemented real-time reasoning trace visibility</li>
-                                    <li>Created beautiful Streamlit interface with system monitoring</li>
-                                </ul>
-                            </div>
-                            <a href="https://github.com/meron-23/self-rag" class="project-link" target="_blank" rel="noopener">View Project</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="images/projects/creditrust.svg" alt="CrediTrust Interface" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">CrediTrust Financial - Complaint Intelligence AI</h3>
-                            <p class="project-description">AI-powered complaint analysis system for a fintech serving 500,000+ customers across Kenya, Uganda, Tanzania, and Rwanda. Transforms unstructured feedback into strategic insights.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">FAISS</span>
-                                <span class="tech-tag">sentence-transformers</span>
-                                <span class="tech-tag">Flan-T5</span>
-                                <span class="tech-tag">Streamlit</span>
-                                <span class="tech-tag">PyTorch</span>
-                            </div>
-                            <div class="project-achievements">
-                                <ul class="achievement-list">
-                                    <li>Built semantic search across 4 East African markets</li>
-                                    <li>Created PM-friendly interface with one-click business queries</li>
-                                    <li>Implemented multi-product analysis (Credit Cards, BNPL, Loans)</li>
-                                </ul>
-                            </div>
-                            <a href="https://github.com/meron-23/creditrust-complaint-rag" class="project-link" target="_blank" rel="noopener">View Project</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="images/projects/shap.svg" alt="SHAP Analysis Visualization" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">SHAP Analysis of Supreme Court Decisions</h3>
-                            <p class="project-description">Applied Explainable AI (SHAP) to analyze and interpret predictions of U.S. Supreme Court case outcomes using historical decision data.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">SHAP</span>
-                                <span class="tech-tag">XGBoost</span>
-                                <span class="tech-tag">scikit-learn</span>
-                                <span class="tech-tag">Matplotlib</span>
-                            </div>
-                            <div class="project-achievements">
-                                <ul class="achievement-list">
-                                    <li>Identified top predictive features in judicial decisions</li>
-                                    <li>Created global and local explanations with SHAP visualizations</li>
-                                    <li>Demonstrated model interpretability on sensitive legal data</li>
-                                </ul>
-                            </div>
-                            <a href="https://github.com/meron-23/shap-supreme-court-analysis" class="project-link" target="_blank" rel="noopener">View Project</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card">
-                        <div class="project-image">
-                            <img src="images/projects/fraud.svg" alt="Fraud Detection Dashboard" loading="lazy">
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Fraud Detection System - Adey Innovations Inc.</h3>
-                            <p class="project-description">End-to-end fraud detection system for e-commerce and credit card transactions with emphasis on interpretability and business impact.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">XGBoost</span>
-                                <span class="tech-tag">SMOTE</span>
-                                <span class="tech-tag">SHAP</span>
-                                <span class="tech-tag">pandas</span>
-                            </div>
-                            <div class="project-achievements">
-                                <ul class="achievement-list">
-                                    <li>Achieved 0.96 AUC-ROC with XGBoost</li>
-                                    <li>Handled severe class imbalance using SMOTE</li>
-                                    <li>Built SHAP-based explanations for compliance</li>
-                                </ul>
-                            </div>
-                            <a href="https://github.com/meron-23/fraud-detection-model" class="project-link" target="_blank" rel="noopener">View Project</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="experience">
-            <div class="container">
-                <h2 class="section-title">Professional Experience</h2>
-                <div class="experience-grid">
-                    <div class="experience-category">
-                        <h3 class="category-title">Machine Learning Engineering</h3>
-                        <div class="experience-items">
-                            <div class="experience-item">
-                                <h4 class="item-title">ML Engineering Intern</h4>
-                                <p class="item-organization">10 Academy</p>
-                                <p class="item-date">2025 - 2026</p>
-                                <p class="item-description">Completed intensive Kifiya AI Mastery (KAIM) Training Program, a three-month remote training focused on creating job-ready AI Engineers for Ethiopian FinTech sector. Engaged in comprehensive curriculum covering Generative AI Engineering, Machine Learning Engineering, and Data Engineering with emphasis on project-based learning and real-world applications.</p>
-                                <div class="item-achievements">
-                                    <ul class="achievement-list">
-                                        <li>Developed practical ML skills through intensive project-based learning</li>
-                                        <li>Gained expertise in Generative AI and ML Engineering for FinTech applications</li>
-                                        <li>Collaborated on industry-relevant projects with direct business impact</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="experience-category">
-                        <h3 class="category-title">Software Development</h3>
-                        <div class="experience-items">
-                            <div class="experience-item">
-                                <h4 class="item-title">Software Developer Intern</h4>
-                                <p class="item-organization">Gravity Technologies</p>
-                                <p class="item-date">2025 - 2026</p>
-                                <p class="item-description">Contributed to software development projects focusing on innovative technology solutions for business clients. Worked on cutting-edge UI/UX design and digital expertise to ensure seamless client connections and digital transformation initiatives.</p>
-                                <div class="item-achievements">
-                                    <ul class="achievement-list">
-                                        <li>Developed web applications using modern software development practices</li>
-                                        <li>Collaborated on UI/UX design and implementation</li>
-                                        <li>Contributed to digital transformation projects for various clients</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="experience-category">
-                        <h3 class="category-title">Artificial Intelligence</h3>
-                        <div class="experience-items">
-                            <div class="experience-item">
-                                <h4 class="item-title">AI Engineering Intern</h4>
-                                <p class="item-organization">iCog Labs</p>
-                                <p class="item-date">2025 - 2026</p>
-                                <p class="item-description">Worked with East Africa's first private AI and Robotics Research and Development Company. Focused on Artificial Intelligence R&D projects with international clients from USA, Canada, Japan, Hong Kong, and Germany. Gained exposure to Artificial General Intelligence, Robotics, AI-enhanced Commercial Software, Bioinformatics Research, and Machine Learning-based data analysis.</p>
-                                <div class="item-achievements">
-                                    <ul class="achievement-list">
-                                        <li>Contributed to AI research and development projects</li>
-                                        <li>Worked on machine learning-based data analysis initiatives</li>
-                                        <li>Collaborated with international partners including US AI firm Novamente LLC and SingularityNet</li>
-                                        <li>Participated in prototype development for hardware products</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="education">
-            <div class="container">
-                <h2 class="section-title">Education & Certifications</h2>
-                <div class="education-grid">
-                    <div class="education-category">
-                        <h3 class="category-title">University Education</h3>
-                        <div class="education-items">
-                            <div class="education-item">
-                                <h4 class="item-title">Bachelor of Science in Computer Science</h4>
-                                <p class="item-organization">St. Mary's University, Addis Ababa</p>
-                                <p class="item-date">2022 - 2026</p>
-                                <p class="item-description">Completed comprehensive Computer Science curriculum with focus on software development, algorithms, and data structures at accredited private university.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="education-category">
-                        <h3 class="category-title">ALX Programs</h3>
-                        <div class="education-items">
-                            <div class="education-item">
-                                <h4 class="item-title">Data Science Professional Program</h4>
-                                <p class="item-organization">ALX Africa</p>
-                            </div>
-                            <div class="education-item">
-                                <h4 class="item-title">Software Engineering Professional Program</h4>
-                                <p class="item-organization">ALX Africa</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="education-category">
-                        <h3 class="category-title">DeepLearning.AI (Coursera)</h3>
-                        <div class="education-items">
-                            <div class="education-item">
-                                <h4 class="item-title"><a href="#" onclick="showCertificate('unsupervised-learning')" class="item-link">Unsupervised Learning, Recommenders, Reinforcement Learning</a></h4>
-                                <p class="item-date">September 2025</p>
-                                <p class="item-skills">Clustering, Anomaly Detection, Collaborative Filtering, Deep Learning-based Recommenders, Reinforcement Learning</p>
-                            </div>
-                            <div class="education-item">
-                                <h4 class="item-title"><a href="#" onclick="showCertificate('supervised-learning')" class="item-link">Supervised Machine Learning: Regression and Classification</a></h4>
-                                <p class="item-date">September 2025</p>
-                                <p class="item-skills">Linear/Logistic Regression, Scikit-learn, NumPy, Predictive Modeling, Model Evaluation</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="education-category">
-                        <h3 class="category-title">freeCodeCamp</h3>
-                        <div class="education-items">
-                            <div class="education-item">
-                                <h4 class="item-title"><a href="#" onclick="showCertificate('machine-learning-python')" class="item-link">Machine Learning with Python</a></h4>
-                                <p class="item-organization">freeCodeCamp</p>
-                            </div>
-                            <div class="education-item">
-                                <h4 class="item-title"><a href="#" onclick="showCertificate('data-analysis-python')" class="item-link">Data Analysis with Python</a></h4>
-                                <p class="item-organization">freeCodeCamp</p>
-                            </div>
-                            <div class="education-item">
-                                <h4 class="item-title"><a href="#" onclick="showCertificate('data-visualization')" class="item-link">Data Visualization</a></h4>
-                                <p class="item-organization">freeCodeCamp</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="skill-title">Core ML/AI</h3>
-                        <ul class="skill-list">
-                            <li>Machine Learning (Supervised, Unsupervised, Reinforcement Learning)</li>
-                            <li>Deep Learning (Neural Networks, Recommender Systems, Anomaly Detection)</li>
-                            <li>LLM & RAG (LangChain, RAG architectures, Prompt Engineering, Vector Databases)</li>
-                            <li>Explainable AI (SHAP, Feature Importance, Model Interpretability)</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="skill-title">Programming & Libraries</h3>
-                        <ul class="skill-list">
-                            <li>Languages: Python (Advanced), SQL</li>
-                            <li>ML Libraries: scikit-learn, XGBoost, PyTorch, TensorFlow</li>
-                            <li>Data Stack: pandas, NumPy, Matplotlib, Seaborn</li>
-                            <li>NLP/LLM: LangChain, Hugging Face, Transformers</li>
-                        </ul>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3 class="skill-title">Tools & Platforms</h3>
-                        <ul class="skill-list">
-                            <li>Frameworks: Streamlit, FastAPI, Flask</li>
-                            <li>Databases: ChromaDB, FAISS, PostgreSQL</li>
-                            <li>MLOps: MLflow, Docker, Git</li>
-                            <li>Cloud: AWS (basics)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
+    <section id="projects">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Meron Muluye Amare</p>
-                <div class="footer-links">
-                    <a href="resume.html" class="footer-link">Resume</a>
-                    <a href="docs/Meron_Resume.txt" class="footer-link" download>Download Resume (Text)</a>
+            <span class="section-label">Selected Works</span>
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+            </div>
+
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <article class="project-item reveal">
+                    <div class="project-visual">
+                        <img src="images/projects/self-rag.png" alt="Self-RAG Visual">
+                    </div>
+                    <div class="project-info">
+                        <h3>Self-Reflective RAG</h3>
+                        <p>A sophisticated RAG architecture featuring built-in self-critique capabilities. Implemented
+                            specialized critics for Retrieval, Support, and Completeness to ensure real-time answer
+                            integrity.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">ChromaDB</span>
+                            <span class="tag">Mistral-7B</span>
+                        </div>
+                        <a href="https://github.com/meron-23/self-rag" class="btn btn-outline" target="_blank">View
+                            Project</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-item reveal">
+                    <div class="project-info">
+                        <h3>Complaint Intelligence AI</h3>
+                        <p>AI-powered analysis system for CrediTrust Financial. Transforming unstructured feedback from
+                            500,000+ customers into strategic insights across East African markets.</p>
+                        <div class="project-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">FAISS</span>
+                            <span class="tag">Flan-T5</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <a href="https://github.com/meron-23/creditrust-complaint-rag" class="btn btn-outline"
+                            target="_blank">View Project</a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="images/projects/creditrust.png" alt="Fintech Visual">
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-item reveal">
+                    <div class="project-visual">
+                        <img src="images/projects/shap.png" alt="SHAP Analysis Visual">
+                    </div>
+                    <div class="project-info">
+                        <h3>Supreme Court SHAP Analysis</h3>
+                        <p>Applying state-of-the-art Explainable AI (SHAP) to interpret predictive models of U.S.
+                            Supreme Court decisions, highlighting top predictive features in judicial outcomes.</p>
+                        <div class="project-tags">
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">SHAP</span>
+                            <span class="tag">scikit-learn</span>
+                            <span class="tag">Visual Analytics</span>
+                        </div>
+                        <a href="https://github.com/meron-23/shap-supreme-court-analysis" class="btn btn-outline"
+                            target="_blank">View Project</a>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-item reveal">
+                    <div class="project-info">
+                        <h3>Fraud Detection Infrastructure</h3>
+                        <p>End-to-end detection system for Adey Innovations Inc. Achieved 0.96 AUC-ROC while maintaining
+                            full model interpretability for regulatory compliance.</p>
+                        <div class="project-tags">
+                            <span class="tag">SMOTE</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">Feature Engineering</span>
+                            <span class="tag">MLOps</span>
+                        </div>
+                        <a href="https://github.com/meron-23/fraud-detection-model" class="btn btn-outline"
+                            target="_blank">View Project</a>
+                    </div>
+                    <div class="project-visual">
+                        <img src="images/projects/fraud.png" alt="Security Visual">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background: var(--bg-alt);">
+        <div class="container">
+            <span class="section-label">Technical Proficiency</span>
+            <div class="section-title">
+                <h2>Capabilities</h2>
+            </div>
+
+            <div class="skills-grid reveal">
+                <div class="skill-category">
+                    <h4>Core ML/AI</h4>
+                    <ul class="skill-list">
+                        <li>Supervised/Unsupervised Learning</li>
+                        <li>Neural Networks & Deep Learning</li>
+                        <li>RAG Architectures & LLMOps</li>
+                        <li>Explainable AI (SHAP)</li>
+                        <li>Reinforcement Learning</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Engineering</h4>
+                    <ul class="skill-list">
+                        <li>Python (Advanced) & SQL</li>
+                        <li>PyTorch & TensorFlow</li>
+                        <li>Scikit-learn & XGBoost</li>
+                        <li>FastAPI & Flask</li>
+                        <li>MLflow & Docker</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Environment</h4>
+                    <ul class="skill-list">
+                        <li>ChromaDB & FAISS</li>
+                        <li>AWS Cloud Foundations</li>
+                        <li>PostgreSQL</li>
+                        <li>Hugging Face ecosystem</li>
+                        <li>Git & MLOps Pipelines</li>
+                    </ul>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <div class="container">
+            <span class="section-label">Professional Evolution</span>
+            <div class="section-title">
+                <h2>Background</h2>
+            </div>
+
+            <div class="timeline-formal reveal">
+                <div class="timeline-entry">
+                    <span class="timeline-year">2025 — 2026</span>
+                    <span class="timeline-role">ML Engineering Intern</span>
+                    <span class="timeline-org">10 Academy | Addis Ababa</span>
+                    <p>Intensive AI mastery focused on the Ethiopian FinTech sector, specializing in job-ready GenAI and
+                        ML engineering workflows.</p>
+                </div>
+                <div class="timeline-entry">
+                    <span class="timeline-year">2025 — 2026</span>
+                    <span class="timeline-role">Software Developer Intern</span>
+                    <span class="timeline-org">Gravity Technologies</span>
+                    <p>Digital transformation and UI/UX projects for high-profile business clients.</p>
+                </div>
+                <div class="timeline-entry">
+                    <span class="timeline-year">2025 — 2026</span>
+                    <span class="timeline-role">AI Engineering Intern</span>
+                    <span class="timeline-org">iCog Labs</span>
+                    <p>Research and Development for international clients, focusing on AGI, Robotics, and
+                        Bioinformatics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" style="background: var(--bg-alt);">
+        <div class="container">
+            <span class="section-label">Accreditations</span>
+            <div class="section-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certs-display reveal">
+                <div class="cert-thumbnail">
+                    <img src="images/certificates/regression and classification.png"
+                        alt="Supervised Learning Certificate">
+                </div>
+                <div class="cert-thumbnail">
+                    <img src="images/certificates/recommenders and reinforcment learning.png"
+                        alt="Unsupervised Learning Certificate">
+                </div>
+                <div class="cert-thumbnail">
+                    <img src="images/certificates/machine learning with python.png" alt="ML with Python Certificate">
+                </div>
+                <div class="cert-thumbnail">
+                    <img src="images/certificates/data analysis with python.png" alt="Data Analysis Certificate">
+                </div>
+                <div class="cert-thumbnail">
+                    <img src="images/certificates/data visualization.png" alt="Data Visualization Certificate">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="margin-bottom: 3rem;">
+                <a href="mailto:meronmuuye75@gmail.com" style="margin: 0 1.5rem;">Email</a>
+                <a href="https://github.com/meron-23" style="margin: 0 1.5rem;" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/meron-muluye" style="margin: 0 1.5rem;" target="_blank">LinkedIn</a>
+            </div>
+            <p>&copy; 2026 Meron Muluye. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Certificate Modal -->
-    <div id="certificate-modal" class="certificate-modal">
-        <div class="certificate-modal-content">
-            <div class="certificate-modal-header">
-                <h3 class="certificate-modal-title">Certificate Verification</h3>
-                <button class="certificate-modal-close" onclick="closeCertificate()">&times;</button>
-            </div>
-            <div class="certificate-modal-body">
-                <div class="certificate-info">
-                    <h4 class="certificate-name" id="certificate-name"></h4>
-                    <p class="certificate-description" id="certificate-description"></p>
-                    <div class="certificate-actions">
-                        <a href="#" id="certificate-link" target="_blank" rel="noopener" class="certificate-btn">View Original Certificate</a>
-                        <button class="certificate-btn certificate-btn--secondary" onclick="closeCertificate()">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Specific Reveal Logic for the formal layout
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
 
-    <script src="js/main.js"></script>
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
+
 </html>
