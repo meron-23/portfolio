@@ -1,5 +1,5 @@
 MERON MULUYE
-Machine Learning Engineer & Data Scientist
+Software Engineer & AI Engineer
 
 CONTACT
 Email: meronmuluye75@gmail.com
@@ -7,7 +7,7 @@ GitHub: https://github.com/meron-23
 LinkedIn: LinkedIn/in/meron-muluye
 
 PROFESSIONAL SUMMARY
-Machine Learning Engineer and Data Scientist with expertise in developing sophisticated AI systems, including self-reflective RAG architectures, fraud detection models, and explainable AI applications. Proficient in the full ML lifecycle from data preprocessing to deployment, with strong focus on model interpretability and business impact.
+Versatile Software Engineer and AI Engineer with expertise in building scalable full-stack applications and sophisticated AI systems. Proficient in modern web frameworks (React, Next.js), backend development (Node.js, FastAPI), and AI architectures (RAG, Explainable AI). Strong focus on delivering high-impact solutions that bridge robust engineering and intelligent automation.
 
 EXPERIENCE
 
@@ -51,15 +51,17 @@ freeCodeCamp Certifications | 2025-2026
 
 TECHNICAL SKILLS
 
-Machine Learning & AI
-- Supervised/Unsupervised Learning, Deep Learning, Neural Networks, Recommender Systems, Anomaly Detection
-- LLM & RAG: LangChain, RAG architectures, Prompt Engineering, Vector Databases
-- Explainable AI: SHAP, Feature Importance, Model Interpretability
+Software Engineering
+- Full-Stack Development: React, Next.js, Node.js, FastAPI, Flask
+- Languages: Python (Advanced), SQL, TypeScript, JavaScript
+- Databases: PostgreSQL, MySQL, MongoDB, Redis
+- Tools: Docker, Git, RESTful APIs, MLOps Pipelines
 
-Programming & Libraries
-- Languages: Python (Advanced), SQL
-- ML Libraries: scikit-learn, XGBoost, PyTorch, TensorFlow, pandas, NumPy, Matplotlib, Seaborn
-- NLP/LLM: LangChain, Hugging Face, Transformers
+AI Engineering & ML
+- LLM & RAG: LangChain, Gemini API, RAG architectures, Vector Databases (Chroma, FAISS)
+- Deep Learning: PyTorch, TensorFlow, Neural Networks
+- Explainable AI: SHAP, Feature Importance, Model Interpretability
+- Libraries: scikit-learn, XGBoost, pandas, NumPy, Matplotlib
 
 Tools & Platforms
 - Frameworks: Streamlit, FastAPI, Flask
@@ -68,6 +70,16 @@ Tools & Platforms
 - Cloud: AWS (basics)
 
 PROJECTS
+
+Savanna Management System (Full-Stack)
+- Comprehensive CRM/ERP platform with multi-role dashboards and lead tracking
+- Secure Google OAuth/JWT authentication and real-time data visualization
+- Technologies: React, Node.js, MySQL, Ant Design, Tailwind CSS
+
+E-Tebeka - Digital Legal Repository
+- Ethiopian law digital library with AI-powered document parsing (Gemini API)
+- Tiered access system (Public, Student, Lawyer) and full-text search
+- Technologies: Next.js, FastAPI, PostgreSQL, Gemini API, Framer Motion
 
 Self-RAG: Self-Reflective Retrieval-Augmented Generation
 - Sophisticated RAG system with built-in self-critique capabilities

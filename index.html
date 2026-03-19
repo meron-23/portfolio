@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meron Muluye | Machine Learning Engineer</title>
+    <title>Meron Muluye | Software & AI Engineer</title>
     <meta name="description"
-        content="Official portfolio of Meron Muluye. Specialized in RAG architectures, Fraud Detection, and Explainable AI.">
+        content="Official portfolio of Meron Muluye. Specialized in Full-Stack Development, AI Integration, RAG architectures, and Scalable Systems.">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- SVG Favicon: Minimalist "M" logo -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Cpath d='M8 22V10l8 8 8-8v12' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 
 <body>
@@ -31,9 +33,10 @@
     </nav>
 
     <header class="hero">
+        <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content reveal">
-                <span class="subtitle">Machine Learning Engineer & Data Scientist</span>
+                <span class="subtitle">Software Engineer & AI Engineer</span>
                 <h1>Designing Intelligent Systems for Complex Realities.</h1>
                 <p>Specializing in the intersection of Retrieval-Augmented Generation, Model Interpretability, and
                     Scalable AI Infrastructure. Currently based in Addis Ababa, Ethiopia.</p>
@@ -42,8 +45,21 @@
                     <a href="resume.html" class="btn btn-outline">Review CV</a>
                 </div>
             </div>
+            <div class="hero-visual-wrapper reveal">
+                <img src="images/profile/avatar.jpg" alt="Meron Muluye Portrait">
+            </div>
         </div>
     </header>
+
+    <div class="collabs">
+        <div class="container">
+            <div class="logo-grid reveal">
+                <img src="images/profile/10_academy.png" alt="10 Academy" class="collab-logo">
+                <img src="images/profile/icog_labs.png" alt="iCog Labs" class="collab-logo">
+                <img src="images/profile/gravity_tech.png" alt="Gravity Technologies" class="collab-logo">
+            </div>
+        </div>
+    </div>
 
     <section id="projects">
         <div class="container">
@@ -53,21 +69,62 @@
             </div>
 
             <div class="projects-list">
+                <!-- Project: Savanna -->
+                <article class="project-item reveal">
+                    <span class="project-index">01</span>
+                    <div class="project-visual">
+                        <img src="images/projects/savanna.png" alt="Savanna Management System Visual">
+                    </div>
+                    <div class="project-info">
+                        <h3>Savanna Management System</h3>
+                        <p>A comprehensive full-stack CRM/ERP platform featuring multi-role dashboards and secure Google
+                            OAuth/JWT authentication.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Tailwind</span>
+                        </div>
+                        <a href="https://github.com/meron-23/Savanna" class="btn btn-outline" target="_blank">View
+                            Project</a>
+                    </div>
+                </article>
+
+                <!-- Project: E-Tebeka -->
+                <article class="project-item reveal">
+                    <span class="project-index">02</span>
+                    <div class="project-visual">
+                        <img src="images/projects/e-tebeka.png" alt="E-Tebeka Platform Visual">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Tebeka Legal Repository</h3>
+                        <p>Ethiopian law digital library with AI-powered document parsing, full-text search, and tiered
+                            access systems.</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Gemini API</span>
+                        </div>
+                        <a href="https://github.com/meron-23/E-tebeka-full" class="btn btn-outline" target="_blank">View
+                            Project</a>
+                    </div>
+                </article>
+
                 <!-- Project 1 -->
                 <article class="project-item reveal">
+                    <span class="project-index">03</span>
                     <div class="project-visual">
                         <img src="images/projects/self-rag.png" alt="Self-RAG Visual">
                     </div>
                     <div class="project-info">
                         <h3>Self-Reflective RAG</h3>
-                        <p>A sophisticated RAG architecture featuring built-in self-critique capabilities. Implemented
-                            specialized critics for Retrieval, Support, and Completeness to ensure real-time answer
-                            integrity.</p>
+                        <p>Sophisticated RAG architecture featuring built-in self-critique capabilities for real-time
+                            answer integrity.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">LangChain</span>
                             <span class="tag">ChromaDB</span>
-                            <span class="tag">Mistral-7B</span>
                         </div>
                         <a href="https://github.com/meron-23/self-rag" class="btn btn-outline" target="_blank">View
                             Project</a>
@@ -76,38 +133,38 @@
 
                 <!-- Project 2 -->
                 <article class="project-item reveal">
+                    <span class="project-index">04</span>
+                    <div class="project-visual">
+                        <img src="images/projects/creditrust.png" alt="Fintech Visual">
+                    </div>
                     <div class="project-info">
                         <h3>Complaint Intelligence AI</h3>
-                        <p>AI-powered analysis system for CrediTrust Financial. Transforming unstructured feedback from
-                            500,000+ customers into strategic insights across East African markets.</p>
+                        <p>AI-powered analysis system for CrediTrust Financial, transforming unstructured feedback into
+                            strategic insights.</p>
                         <div class="project-tags">
                             <span class="tag">PyTorch</span>
                             <span class="tag">FAISS</span>
                             <span class="tag">Flan-T5</span>
-                            <span class="tag">Streamlit</span>
                         </div>
                         <a href="https://github.com/meron-23/creditrust-complaint-rag" class="btn btn-outline"
                             target="_blank">View Project</a>
-                    </div>
-                    <div class="project-visual">
-                        <img src="images/projects/creditrust.png" alt="Fintech Visual">
                     </div>
                 </article>
 
                 <!-- Project 3 -->
                 <article class="project-item reveal">
+                    <span class="project-index">05</span>
                     <div class="project-visual">
                         <img src="images/projects/shap.png" alt="SHAP Analysis Visual">
                     </div>
                     <div class="project-info">
                         <h3>Supreme Court SHAP Analysis</h3>
-                        <p>Applying state-of-the-art Explainable AI (SHAP) to interpret predictive models of U.S.
-                            Supreme Court decisions, highlighting top predictive features in judicial outcomes.</p>
+                        <p>Applying Explainable AI (SHAP) to interpret predictive models of judicial outcomes with
+                            visual analytics.</p>
                         <div class="project-tags">
                             <span class="tag">XGBoost</span>
                             <span class="tag">SHAP</span>
                             <span class="tag">scikit-learn</span>
-                            <span class="tag">Visual Analytics</span>
                         </div>
                         <a href="https://github.com/meron-23/shap-supreme-court-analysis" class="btn btn-outline"
                             target="_blank">View Project</a>
@@ -116,21 +173,21 @@
 
                 <!-- Project 4 -->
                 <article class="project-item reveal">
+                    <span class="project-index">06</span>
+                    <div class="project-visual">
+                        <img src="images/projects/fraud.png" alt="Security Visual">
+                    </div>
                     <div class="project-info">
                         <h3>Fraud Detection Infrastructure</h3>
-                        <p>End-to-end detection system for Adey Innovations Inc. Achieved 0.96 AUC-ROC while maintaining
-                            full model interpretability for regulatory compliance.</p>
+                        <p>End-to-end detection system achieving 0.96 AUC-ROC while maintaining full model
+                            interpretability.</p>
                         <div class="project-tags">
-                            <span class="tag">SMOTE</span>
                             <span class="tag">XGBoost</span>
-                            <span class="tag">Feature Engineering</span>
                             <span class="tag">MLOps</span>
+                            <span class="tag">SMOTE</span>
                         </div>
                         <a href="https://github.com/meron-23/fraud-detection-model" class="btn btn-outline"
                             target="_blank">View Project</a>
-                    </div>
-                    <div class="project-visual">
-                        <img src="images/projects/fraud.png" alt="Security Visual">
                     </div>
                 </article>
             </div>
@@ -139,40 +196,55 @@
 
     <section id="skills" style="background: var(--bg-alt);">
         <div class="container">
-            <span class="section-label">Technical Proficiency</span>
+            <span class="section-label">Technical Mastery</span>
             <div class="section-title">
-                <h2>Capabilities</h2>
+                <h2>Technical Arsenal</h2>
             </div>
 
-            <div class="skills-grid reveal">
-                <div class="skill-category">
-                    <h4>Core ML/AI</h4>
-                    <ul class="skill-list">
-                        <li>Supervised/Unsupervised Learning</li>
-                        <li>Neural Networks & Deep Learning</li>
-                        <li>RAG Architectures & LLMOps</li>
-                        <li>Explainable AI (SHAP)</li>
-                        <li>Reinforcement Learning</li>
+            <div class="arsenal-grid reveal">
+                <!-- Software Engineering -->
+                <div class="arsenal-card">
+                    <div class="skill-illustration se-visual">
+                        <div class="code-bracket">&lt;</div>
+                        <div class="code-bracket">&gt;</div>
+                        <div class="code-stack"></div>
+                    </div>
+                    <h4>Software Engineering</h4>
+                    <ul class="arsenal-list">
+                        <li>Full-Stack Mastery (Next.js, React, Node.js)</li>
+                        <li>Scalable Backend (FastAPI, Express)</li>
+                        <li>Robust Databases (PostgreSQL, MySQL, MongoDB)</li>
+                        <li>MFA & Secure Auth Implementation</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h4>Engineering</h4>
-                    <ul class="skill-list">
-                        <li>Python (Advanced) & SQL</li>
-                        <li>PyTorch & TensorFlow</li>
-                        <li>Scikit-learn & XGBoost</li>
-                        <li>FastAPI & Flask</li>
-                        <li>MLflow & Docker</li>
+
+                <!-- AI Engineering -->
+                <div class="arsenal-card">
+                    <div class="skill-illustration ai-visual">
+                        <div class="ai-core"></div>
+                        <div class="ai-orbit"></div>
+                    </div>
+                    <h4>AI Engineering</h4>
+                    <ul class="arsenal-list">
+                        <li>Advanced RAG & LLM Integration</li>
+                        <li>Explainable AI (SHAP, LIME)</li>
+                        <li>MLOps & Model Lifecycle (MLflow)</li>
+                        <li>High-Dimensional Vector Search (FAISS)</li>
                     </ul>
                 </div>
-                <div class="skill-category">
-                    <h4>Environment</h4>
-                    <ul class="skill-list">
-                        <li>ChromaDB & FAISS</li>
-                        <li>AWS Cloud Foundations</li>
-                        <li>PostgreSQL</li>
-                        <li>Hugging Face ecosystem</li>
-                        <li>Git & MLOps Pipelines</li>
+
+                <!-- Infrastructure -->
+                <div class="arsenal-card">
+                    <div class="skill-illustration infra-visual">
+                        <div class="server-blade"></div>
+                        <div class="server-blade"></div>
+                    </div>
+                    <h4>Infrastructure</h4>
+                    <ul class="arsenal-list">
+                        <li>Containerization (Docker)</li>
+                        <li>Cloud Foundations (AWS)</li>
+                        <li>CI/CD & Version Control (Git)</li>
+                        <li>Agile & Scrum Methodologies</li>
                     </ul>
                 </div>
             </div>
@@ -187,25 +259,74 @@
             </div>
 
             <div class="timeline-formal reveal">
+                <!-- Entry 1: 10 Academy -->
                 <div class="timeline-entry">
-                    <span class="timeline-year">2025 — 2026</span>
-                    <span class="timeline-role">ML Engineering Intern</span>
-                    <span class="timeline-org">10 Academy | Addis Ababa</span>
-                    <p>Intensive AI mastery focused on the Ethiopian FinTech sector, specializing in job-ready GenAI and
-                        ML engineering workflows.</p>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-org-info">
+                                <img src="images/profile/10_academy.png" alt="10 Academy Logo"
+                                    class="timeline-org-logo">
+                                <div>
+                                    <span class="timeline-role">ML Engineering Intern</span>
+                                    <span class="timeline-org-name">10 Academy</span>
+                                </div>
+                            </div>
+                            <span class="timeline-year">2025 — 2026</span>
+                        </div>
+                        <p>Intensive AI mastery focused on the Ethiopian FinTech sector, specializing in job-ready GenAI
+                            and ML engineering workflows.</p>
+                        <ul class="timeline-highlights">
+                            <li>Developed end-to-end RAG pipelines for legal and financial document analysis.</li>
+                            <li>Implemented scalable ML models with robust MLOps integration.</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <!-- Entry 2: Gravity Technologies -->
                 <div class="timeline-entry">
-                    <span class="timeline-year">2025 — 2026</span>
-                    <span class="timeline-role">Software Developer Intern</span>
-                    <span class="timeline-org">Gravity Technologies</span>
-                    <p>Digital transformation and UI/UX projects for high-profile business clients.</p>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-org-info">
+                                <img src="images/profile/gravity_tech.png" alt="Gravity Tech Logo"
+                                    class="timeline-org-logo">
+                                <div>
+                                    <span class="timeline-role">Software Developer Intern</span>
+                                    <span class="timeline-org-name">Gravity Technologies</span>
+                                </div>
+                            </div>
+                            <span class="timeline-year">2025 — 2026</span>
+                        </div>
+                        <p>Digital transformation and UI/UX projects for high-profile business clients across Ethiopia.
+                        </p>
+                        <ul class="timeline-highlights">
+                            <li>Built high-performance web applications using modern React and Node.js architectures.
+                            </li>
+                            <li>Optimized frontend performance and state management for complex data dashboards.</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <!-- Entry 3: iCog Labs -->
                 <div class="timeline-entry">
-                    <span class="timeline-year">2025 — 2026</span>
-                    <span class="timeline-role">AI Engineering Intern</span>
-                    <span class="timeline-org">iCog Labs</span>
-                    <p>Research and Development for international clients, focusing on AGI, Robotics, and
-                        Bioinformatics.</p>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="timeline-org-info">
+                                <img src="images/profile/icog_labs.png" alt="iCog Labs Logo" class="timeline-org-logo">
+                                <div>
+                                    <span class="timeline-role">AI Engineering Intern</span>
+                                    <span class="timeline-org-name">iCog Labs</span>
+                                </div>
+                            </div>
+                            <span class="timeline-year">2025 — 2026</span>
+                        </div>
+                        <p>Research and Development for international clients, focusing on AGI, Robotics, and
+                            Bioinformatics.</p>
+                        <ul class="timeline-highlights">
+                            <li>Contributed to AGI research papers and bioinformatics tooling development.</li>
+                            <li>Collaborated with international teams on robotics vision systems and data processing.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -218,6 +339,9 @@
                 <h2>Certifications</h2>
             </div>
             <div class="certs-display reveal">
+                <div class="cert-thumbnail">
+                    <img src="images/certificates/alx-se.png" alt="ALX Software Engineering Professional Certificate">
+                </div>
                 <div class="cert-thumbnail">
                     <img src="images/certificates/regression and classification.png"
                         alt="Supervised Learning Certificate">
@@ -236,6 +360,15 @@
                     <img src="images/certificates/data visualization.png" alt="Data Visualization Certificate">
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="connect reveal">
+        <div class="container">
+            <h2>Let's build the future together.</h2>
+            <p>I'm currently open to collaborative projects and full-time opportunities at the intersection of Software
+                Engineering and AI.</p>
+            <a href="mailto:meronmuuye75@gmail.com" class="btn btn-white">Get In Touch</a>
         </div>
     </section>
 
